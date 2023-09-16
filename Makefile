@@ -68,3 +68,9 @@ clean:
 distclean:
 	@echo CLEAN $(DISTCLEAN_LIST)
 	@rm -f $(DISTCLEAN_LIST)
+
+.PHONY: run
+run:
+	@echo RUN $(TARGET)
+	@$(TARGET)
+
